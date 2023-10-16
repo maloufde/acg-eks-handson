@@ -1,0 +1,8 @@
+[cloudshell-user@ip-10-2-28-90 test]$ ./run-with-ssl.sh
+Release "sample-app" has been upgraded. Happy Helming!
+NAME: sample-app
+LAST DEPLOYED: Mon Oct 16 11:20:34 2023
+NAMESPACE: default
+STATUS: deployed
+REVISION: 2
+TEST SUITE: None

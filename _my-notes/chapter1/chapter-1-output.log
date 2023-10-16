@@ -1,0 +1,65 @@
+[cloudshell-user@ip-10-2-28-90 hands-on-with-amazon-eks]$ ./scripts-by-chapter/chapter-1.sh
+***************************************************
+********* CHAPTER 1 - STARTED AT Mon Oct 16 09:47:46 UTC 2023 **********
+***************************************************
+--- This could take around 20 minutes
+2023-10-16 09:47:46 [ℹ]  eksctl version 0.147.0
+2023-10-16 09:47:46 [ℹ]  using region us-east-1
+2023-10-16 09:47:46 [ℹ]  subnets for us-east-1a - public:10.0.0.0/19 private:10.0.96.0/19
+2023-10-16 09:47:46 [ℹ]  subnets for us-east-1b - public:10.0.32.0/19 private:10.0.128.0/19
+2023-10-16 09:47:46 [ℹ]  subnets for us-east-1c - public:10.0.64.0/19 private:10.0.160.0/19
+2023-10-16 09:47:46 [ℹ]  nodegroup "eks-node-group" will use "ami-007f39d3e1d727fcd" [AmazonLinux2/1.25]
+2023-10-16 09:47:46 [ℹ]  using Kubernetes version 1.25
+2023-10-16 09:47:46 [ℹ]  creating EKS cluster "eks-acg" in "us-east-1" region with un-managed nodes
+2023-10-16 09:47:46 [ℹ]  1 nodegroup (eks-node-group) was included (based on the include/exclude rules)
+2023-10-16 09:47:46 [ℹ]  will create a CloudFormation stack for cluster itself and 1 nodegroup stack(s)
+2023-10-16 09:47:46 [ℹ]  will create a CloudFormation stack for cluster itself and 0 managed nodegroup stack(s)
+2023-10-16 09:47:46 [ℹ]  if you encounter any issues, check CloudFormation console or try 'eksctl utils describe-stacks --region=us-east-1 --cluster=eks-acg'
+2023-10-16 09:47:46 [ℹ]  Kubernetes API endpoint access will use default of {publicAccess=true, privateAccess=false} for cluster "eks-acg" in "us-east-1"
+2023-10-16 09:47:46 [ℹ]  CloudWatch logging will not be enabled for cluster "eks-acg" in "us-east-1"
+2023-10-16 09:47:46 [ℹ]  you can enable it with 'eksctl utils update-cluster-logging --enable-types={SPECIFY-YOUR-LOG-TYPES-HERE (e.g. all)} --region=us-east-1 --cluster=eks-acg'
+2023-10-16 09:47:46 [ℹ]
+2 sequential tasks: { create cluster control plane "eks-acg",
+    2 sequential sub-tasks: {
+        wait for control plane to become ready,
+        create nodegroup "eks-node-group",
+    }
+}
+2023-10-16 09:47:46 [ℹ]  building cluster stack "eksctl-eks-acg-cluster"
+2023-10-16 09:47:46 [ℹ]  deploying stack "eksctl-eks-acg-cluster"
+2023-10-16 09:48:16 [ℹ]  waiting for CloudFormation stack "eksctl-eks-acg-cluster"
+2023-10-16 09:48:46 [ℹ]  waiting for CloudFormation stack "eksctl-eks-acg-cluster"
+2023-10-16 09:49:47 [ℹ]  waiting for CloudFormation stack "eksctl-eks-acg-cluster"
+2023-10-16 09:50:47 [ℹ]  waiting for CloudFormation stack "eksctl-eks-acg-cluster"
+2023-10-16 09:51:47 [ℹ]  waiting for CloudFormation stack "eksctl-eks-acg-cluster"
+2023-10-16 09:52:47 [ℹ]  waiting for CloudFormation stack "eksctl-eks-acg-cluster"
+2023-10-16 09:53:47 [ℹ]  waiting for CloudFormation stack "eksctl-eks-acg-cluster"
+2023-10-16 09:54:47 [ℹ]  waiting for CloudFormation stack "eksctl-eks-acg-cluster"
+2023-10-16 09:55:47 [ℹ]  waiting for CloudFormation stack "eksctl-eks-acg-cluster"
+2023-10-16 09:56:47 [ℹ]  waiting for CloudFormation stack "eksctl-eks-acg-cluster"
+2023-10-16 09:57:47 [ℹ]  waiting for CloudFormation stack "eksctl-eks-acg-cluster"
+2023-10-16 09:59:48 [ℹ]  building nodegroup stack "eksctl-eks-acg-nodegroup-eks-node-group"
+2023-10-16 09:59:48 [ℹ]  --nodes-min=3 was set automatically for nodegroup eks-node-group
+2023-10-16 09:59:48 [ℹ]  --nodes-max=3 was set automatically for nodegroup eks-node-group
+2023-10-16 09:59:48 [ℹ]  deploying stack "eksctl-eks-acg-nodegroup-eks-node-group"
+2023-10-16 09:59:48 [ℹ]  waiting for CloudFormation stack "eksctl-eks-acg-nodegroup-eks-node-group"
+2023-10-16 10:00:18 [ℹ]  waiting for CloudFormation stack "eksctl-eks-acg-nodegroup-eks-node-group"
+2023-10-16 10:01:11 [ℹ]  waiting for CloudFormation stack "eksctl-eks-acg-nodegroup-eks-node-group"
+2023-10-16 10:01:52 [ℹ]  waiting for CloudFormation stack "eksctl-eks-acg-nodegroup-eks-node-group"
+2023-10-16 10:03:21 [ℹ]  waiting for CloudFormation stack "eksctl-eks-acg-nodegroup-eks-node-group"
+2023-10-16 10:03:21 [ℹ]  waiting for the control plane to become ready
+2023-10-16 10:03:22 [✔]  saved kubeconfig as "/home/cloudshell-user/.kube/config"
+2023-10-16 10:03:22 [ℹ]  no tasks
+2023-10-16 10:03:22 [✔]  all EKS cluster resources for "eks-acg" have been created
+2023-10-16 10:03:22 [ℹ]  adding identity "arn:aws:iam::254365913028:role/eksctl-eks-acg-nodegroup-eks-node--NodeInstanceRole-xpi1q5af7vDZ" to auth ConfigMap
+2023-10-16 10:03:22 [ℹ]  nodegroup "eks-node-group" has 0 node(s)
+2023-10-16 10:03:22 [ℹ]  waiting for at least 3 node(s) to become ready in "eks-node-group"
+2023-10-16 10:03:50 [ℹ]  nodegroup "eks-node-group" has 3 node(s)
+2023-10-16 10:03:50 [ℹ]  node "ip-10-0-105-11.ec2.internal" is ready
+2023-10-16 10:03:50 [ℹ]  node "ip-10-0-151-192.ec2.internal" is ready
+2023-10-16 10:03:50 [ℹ]  node "ip-10-0-168-151.ec2.internal" is ready
+2023-10-16 10:03:54 [ℹ]  kubectl command should work with "/home/cloudshell-user/.kube/config", try 'kubectl get nodes'
+2023-10-16 10:03:54 [✔]  EKS cluster "eks-acg" in "us-east-1" region is ready
+*************************************************************
+********* READY TO CHAPTER 2! - FINISHED AT Mon Oct 16 10:03:54 UTC 2023 *********
+*************************************************************

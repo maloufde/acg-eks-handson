@@ -1,0 +1,5 @@
+[cloudshell-user@ip-10-2-28-90 ssl-certificate]$ ./create.sh
+
+Waiting for changeset to be created..
+Waiting for stack create/update to complete
+Successfully created/updated stack - ssl-certificate

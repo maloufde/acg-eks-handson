@@ -1,0 +1,17 @@
+[cloudshell-user@ip-10-2-28-90 external-dns]$ ./create.sh
+"external-dns" has been added to your repositories
+Release "external-dns" does not exist. Installing it now.
+NAME: external-dns
+LAST DEPLOYED: Mon Oct 16 11:32:14 2023
+NAMESPACE: default
+STATUS: deployed
+REVISION: 1
+TEST SUITE: None
+NOTES:
+***********************************************************************
+* External DNS                                                        *
+***********************************************************************
+  Chart version: 1.13.1
+  App version:   0.13.6
+  Image tag:     registry.k8s.io/external-dns/external-dns:v0.13.6
+***********************************************************************

@@ -1,0 +1,28 @@
+[cloudshell-user@ip-10-2-28-90 load-balancer-controller]$ ./create.sh
+"eks" has been added to your repositories
+Release "aws-load-balancer-controller" does not exist. Installing it now.
+NAME: aws-load-balancer-controller
+LAST DEPLOYED: Mon Oct 16 10:45:59 2023
+NAMESPACE: kube-system
+STATUS: deployed
+REVISION: 1
+TEST SUITE: None
+NOTES:
+AWS Load Balancer controller installed!
+
+Waiting for changeset to be created..
+Waiting for stack create/update to complete
+Successfully created/updated stack - aws-load-balancer-iam-policy
+
+[cloudshell-user@ip-10-2-28-90 load-balancer-controller]$ kubectl get pods -n kube-system
+NAME                                           READY   STATUS    RESTARTS   AGE
+aws-load-balancer-controller-d5f68d89b-cchng   1/1     Running   0          112s                      <-------
+aws-load-balancer-controller-d5f68d89b-xnvts   1/1     Running   0          112s                      <-------
+aws-node-b5ztd                                 1/1     Running   0          44m
+aws-node-kpmhc                                 1/1     Running   0          44m
+aws-node-mfwgv                                 1/1     Running   0          44m
+coredns-7975d6fb9b-z5hsl                       1/1     Running   0          53m
+coredns-7975d6fb9b-zkc4q                       1/1     Running   0          53m
+kube-proxy-k2lzz                               1/1     Running   0          44m
+kube-proxy-nf74g                               1/1     Running   0          44m
+kube-proxy-p4rhd                               1/1     Running   0          44m
